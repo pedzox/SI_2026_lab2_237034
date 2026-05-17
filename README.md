@@ -65,7 +65,7 @@
 ## Тест случаи според критериумот Multiple Condition
 
 ### searchBookByTitle
-book.getTitle().equalsIgnoreCase(title) && !book.isBorrowed()
+book.getTitle().equalsIgnoreCase(title) , !book.isBorrowed()
 
 | Комбинација | title match | !isBorrowed | Резултат | Тест |
 |---|---|---|---|---|
@@ -77,7 +77,7 @@ book.getTitle().equalsIgnoreCase(title) && !book.isBorrowed()
 Минимален број на тест случаи е 3.
 
 ### borrowBook
-title.isEmpty() || author.isEmpty()
+title.isEmpty() , author.isEmpty()
 
 | Комбинација | title.isEmpty | author.isEmpty | Резултат | Тест |
 |---|---|---|---|---|
