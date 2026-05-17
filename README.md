@@ -36,9 +36,9 @@
 
 Минимален број на тест случаи за Every Statement критериумот е 3.
 
-- Test 1: searchBookByTitle("") - фрла IllegalArgumentException
-- Test 2: searchBookByTitle("Clean Code") - враќа листа (книгата постои и не е изнајмена)
-- Test 3: searchBookByTitle("Harry Potter") - враќа null (книгата не постои)
+- Test 1: searchBookByTitle("") -  IllegalArgumentException
+- Test 2: searchBookByTitle("Clean Code") -  листа (knigata postoi i ne iznajmena)
+- Test 3: searchBookByTitle("Harry Potter") -  null (knigata ne postoi)
 
 ## Тест случаи според критериумот Every Branch
 
@@ -57,15 +57,15 @@
 
 Минимален број на тест случаи за Every Branch критериумот е 4.
 
-- Test 1: borrowBook("", "Author") - фрла IllegalArgumentException
-- Test 2: borrowBook("The Hobbit", "J.R.R. Tolkien") - успешно изнајмување
-- Test 3: borrowBook("The Hobbit", "J.R.R. Tolkien") - фрла RuntimeException (веќе изнајмена)
-- Test 4: borrowBook("Nonexistent", "Nobody") - фрла RuntimeException (книгата не постои)
+- Test 1: borrowBook("", "Author") - IllegalArgumentException
+- Test 2: borrowBook("The Hobbit", "J.R.R. Tolkien") - uspesno iznajmuvanje
+- Test 3: borrowBook("The Hobbit", "J.R.R. Tolkien") - фрла RuntimeException (vekje e iznajmena)
+- Test 4: borrowBook("Nonexistent", "Nobody") - фрла RuntimeException (knigata ne postoi)
 
 ## Тест случаи според критериумот Multiple Condition
 
 ### searchBookByTitle
-Услов: book.getTitle().equalsIgnoreCase(title) && !book.isBorrowed()
+book.getTitle().equalsIgnoreCase(title) && !book.isBorrowed()
 
 | Комбинација | title match | !isBorrowed | Резултат | Тест |
 |---|---|---|---|---|
@@ -77,7 +77,7 @@
 Минимален број на тест случаи е 3.
 
 ### borrowBook
-Услов: title.isEmpty() || author.isEmpty()
+title.isEmpty() || author.isEmpty()
 
 | Комбинација | title.isEmpty | author.isEmpty | Резултат | Тест |
 |---|---|---|---|---|
