@@ -1,5 +1,6 @@
 # Втора лабораториска вежба по Софтверско инженерство
 
+master
 ## Име: Предраг Ѓеоргиевски
 ## Индекс: 237034
 
@@ -12,6 +13,19 @@
 ### borrowBook
 
 ![CFG borrowBook](слика)
+
+###  Control Flow Graph
+
+### searchBookByTitle
+
+<img width="1667" height="936" alt="image" src="https://github.com/user-attachments/assets/b2ecd619-368d-4a24-9444-50dab1a2cb40" />
+
+
+### borrowBook
+
+<img width="1438" height="951" alt="image" src="https://github.com/user-attachments/assets/c5b76f0b-aac6-422c-83ff-6d2643a76a83" />
+
+main
 
 ## Цикломатска комплексност
 
@@ -37,9 +51,15 @@
 
 Минимален број на тест случаи за Every Statement критериумот е 3.
 
+master
 - Test 1: searchBookByTitle("") - фрла IllegalArgumentException
 - Test 2: searchBookByTitle("Clean Code") - враќа листа (книгата постои и не е изнајмена)
 - Test 3: searchBookByTitle("Harry Potter") - враќа null (книгата не постои)
+
+- Test 1: searchBookByTitle("") -  IllegalArgumentException
+- Test 2: searchBookByTitle("Clean Code") -  листа (knigata postoi i ne iznajmena)
+- Test 3: searchBookByTitle("Harry Potter") -  null (knigata ne postoi)
+main
 
 ## Тест случаи според критериумот Every Branch
 
@@ -58,15 +78,26 @@
 
 Минимален број на тест случаи за Every Branch критериумот е 4.
 
+ master
 - Test 1: borrowBook("", "Author") - фрла IllegalArgumentException
 - Test 2: borrowBook("The Hobbit", "J.R.R. Tolkien") - успешно изнајмување
 - Test 3: borrowBook("The Hobbit", "J.R.R. Tolkien") - фрла RuntimeException (веќе изнајмена)
 - Test 4: borrowBook("Nonexistent", "Nobody") - фрла RuntimeException (книгата не постои)
 
+- Test 1: borrowBook("", "Author") - IllegalArgumentException
+- Test 2: borrowBook("The Hobbit", "J.R.R. Tolkien") - uspesno iznajmuvanje
+- Test 3: borrowBook("The Hobbit", "J.R.R. Tolkien") - фрла RuntimeException (vekje e iznajmena)
+- Test 4: borrowBook("Nonexistent", "Nobody") - фрла RuntimeException (knigata ne postoi)
+main
+
 ## Тест случаи според критериумот Multiple Condition
 
 ### searchBookByTitle
+ master
 Услов: book.getTitle().equalsIgnoreCase(title) && !book.isBorrowed()
+
+book.getTitle().equalsIgnoreCase(title) , !book.isBorrowed()
+ main
 
 | Комбинација | title match | !isBorrowed | Резултат | Тест |
 |---|---|---|---|---|
@@ -78,7 +109,10 @@
 Минимален број на тест случаи е 3.
 
 ### borrowBook
+ master
 Услов: title.isEmpty() || author.isEmpty()
+
+ main
 
 | Комбинација | title.isEmpty | author.isEmpty | Резултат | Тест |
 |---|---|---|---|---|
