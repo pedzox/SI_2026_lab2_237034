@@ -1,6 +1,6 @@
 # Втора лабораториска вежба по Софтверско инженерство
 
-## Control Flow Graph
+###  Control Flow Graph
 
 ### searchBookByTitle
 
